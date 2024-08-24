@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #fff;
+}
+
+header {
+    height: 100vh; /* Шапка занимает 100% высоты экрана */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Выравнивание текста и изображения по краям */
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: #000000;
+    overflow: hidden; /* Скрыть элементы, выходящие за пределы шапки */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.text-content {
+    max-width: 50%; /* Текст занимает до половины ширины */
+    z-index: 1; /* Поместить текст над изображением при наложении */
+}
+
+.header-photo {
+    max-width: 50%; /* Фото занимает до 50% ширины */
+    max-height: 100%; /* Ограничение высоты изображения шапкой */
+    height: auto; /* Сохранение пропорций */
+    object-fit: contain; /* Масштабирование изображения без обрезки */
+    margin-left: auto; /* Выравнивание изображения по правому краю */
+    box-sizing: border-box; /* Учитывать отступы в размере */
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.offer-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #fff;
+}
+
+
+
+
+
+
+.home-section {
+    background: #333;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.home-section p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+#youtube {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #444;
+}
+
+#youtube h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+#youtube iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    margin-top: 1rem;
+}
+
+section {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.lecture {
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lecture h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+    margin-right: 1rem;
+    flex: 1;
+    font-weight: bold;
+}
+
+.lecture img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#offer {
+    background: #333;
+    border: 1px solid #555;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#offer h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+#offer p {
+    font-size: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Фон всего экрана под модальным окном */
+/* Фон всего экрана под модальным окном */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Закреплено по всему экрану */
+    z-index: 1; /* На переднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* Занимает весь экран */
+    height: 100%; /* Занимает весь экран */
+    background-color: rgba(0, 0, 0, 0.7); /* Темно-серый фон с меньшей прозрачностью */
+    overflow: hidden; /* Отключение прокрутки сайта под модальным окном */
+}
+
+/* Стили для самого модального окна */
+.modal-content {
+    background-color: #333; /* Темно-серый фон для контента модального окна */
+    color: #fff; /* Белый цвет текста внутри модального окна */
+    margin: 5% auto; /* Центрирование по горизонтали и отступ от верхнего края */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина окна */
+    max-width: 800px; /* Максимальная ширина окна */
+    height: 80%; /* Высота окна, занимая большую часть высоты экрана */
+    max-height: 80vh; /* Максимальная высота окна, 80% высоты видимой области */
+    border-radius: 8px;
+    position: relative;
+    overflow-y: auto; /* Прокрутка содержимого вверх и вниз */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для выделения окна */
+}
+
+/* Стили для кнопки закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff; /* Белый цвет при наведении */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Стили для изображений внутри модального окна */
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+

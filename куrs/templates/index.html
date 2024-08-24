@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Построение Тела</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="text-content">
+                <h1>Построение Тела</h1>
+                <p class="offer-text">Быть в лучшем теле - значит быть собой!</p>
+            </div>
+            <img src="C:\Users\koche\OneDrive\Рабочий стол\куrs\templates\photo_2024-08-23_17-52-24.jpg" alt="Логотип" class="header-photo">
+        </div>
+    </header>
+    
+    <section id="youtube">
+        <h2>Введение в Построение Тела</h2>
+        <iframe src="https://www.youtube.com/embed/exampleVSL" frameborder="0" allowfullscreen></iframe>
+    </section>
+    
+    <section id="lectures">
+        <h2>Наши Лекции</h2>
+        <div class="lecture" onclick="showModal('lecture1')">
+            <h3>Лекция 1: Основы Тренировок</h3>
+            <img src="image1.jpg" alt="Лекция 1: Основы Тренировок">
+        </div>
+        <div class="lecture" onclick="showModal('lecture2')">
+            <h3>Лекция 2: Питание для Построения Тела</h3>
+            <img src="image2.jpg" alt="Лекция 2: Питание для Построения Тела">
+        </div>
+        <div class="lecture" onclick="showModal('lecture3')">
+            <h3>Лекция 3: Подсчет Калорий</h3>
+            <img src="image3.jpg" alt="Лекция 3: Подсчет Калорий">
+        </div>
+        <div class="lecture" onclick="showModal('lecture4')">
+            <h3>Лекция 4: Восстановление после Тренировок</h3>
+            <img src="image4.jpg" alt="Лекция 4: Восстановление после Тренировок">
+        </div>
+    </section>
+    
+    <section id="offer">
+        <h2>Индивидуальные Программы Построения Тела</h2>
+        <p>Получите индивидуальные программы, адаптированные под ваши цели, включая тренировки, питание, подсчет калорий и восстановление. Мы поможем вам достичь максимальных результатов.</p>
+        <a href="https://t.me/Vladimre_bot" class="cta-button" target="_blank">Записаться на Ведение</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Построение Тела. Все права защищены.</p>
+    </footer>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+</body>
+</html>
